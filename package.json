@@ -10,8 +10,21 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "gsap": "^3.12.5",
+    "i": "^0.3.7",
+    "npm": "^10.5.0",
     "nuxt": "^3.11.1",
+    "three": "^0.162.0",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-fonts": "^3.2.0"
   }
 }
