@@ -1,4 +1,6 @@
 <template>
+  <div>
+    <canvas ref="canvas"></canvas>
     <div class="absolute text-white text-center w-full max-w-2xl px-6" id="container"
          style="top: 50%; transform:translate(-50%, -50%); left:50%">
       <blockquote>
@@ -13,6 +15,7 @@
         </button>
       </a>
     </div>
+  </div>
 </template>
 
 <script>
@@ -87,11 +90,12 @@ export default {
     const rayCaster = new Raycaster()
     const scene = new Scene();
     const camera = new PerspectiveCamera(75, innerWidth / innerHeight, 0.1, 1000);
-    const renderer = new WebGLRenderer()
+    const renderer = new WebGLRenderer({
+      canvas: this.$refs.canvas
+    })
 
     renderer.setSize(innerWidth, innerHeight)
     renderer.setPixelRatio(devicePixelRatio)
-    document.body.appendChild(renderer.domElement);
 
     new OrbitControls(camera, renderer.domElement)
     camera.position.z = 50
@@ -266,7 +270,7 @@ export default {
         duration: 1.5,
         delay: 1.5,
         onComplete: () => {
-          window.location = 'https://github.com/DavidITT'
+          this.$router.push('/work')
         }
       })
     })
