@@ -21,9 +21,7 @@
             <font-awesome-icon icon="fab fa-linkedin"
                                class="custom-icon"
                                size="2x" role="button"></font-awesome-icon>
-            <font-awesome-icon icon="fab fa-instagram"
-                               class="custom-icon"
-                               size="2x" role="button"></font-awesome-icon>
+
             <font-awesome-icon icon="fas fa-envelope"
                                class="custom-icon"
                                size="2x" role="button"></font-awesome-icon>

@@ -80,8 +80,17 @@ export default {
 
 
       const colors = []
+
+      const hexColor = "47BA87";
+
+      const r = parseInt(hexColor.substring(0, 2), 16) / 255;
+      const g = parseInt(hexColor.substring(2, 4), 16) / 255;
+      const b = parseInt(hexColor.substring(4, 6), 16) / 255;
+
+      console.log(r + ',' + g + ', ' + b)
+
       for (let i = 0; i < planeMesh.geometry.attributes.position.count; i++) {
-        colors.push(0, 0.19, 0.4)
+        colors.push(r, g, b);
       }
 
       planeMesh.geometry.setAttribute('color', new BufferAttribute(new Float32Array(colors), 3))
@@ -89,7 +98,7 @@ export default {
 
     const rayCaster = new Raycaster()
     const scene = new Scene();
-    const camera = new PerspectiveCamera(75, innerWidth / innerHeight, 0.1, 1000);
+    const camera = new PerspectiveCamera(100, innerWidth / innerHeight, 0.001, 1000);
     const renderer = new WebGLRenderer({
       canvas: this.$refs.canvas
     })
@@ -107,24 +116,24 @@ export default {
       vertexColors: true
     })
     const planeMesh = new Mesh(planeGeometry, planeMaterial)
-
     scene.add(planeMesh)
 
     generatePlane()
 
 
-    const light = new DirectionalLight(0xFFFFFF, 2)
-    light.position.set(0, -1, 1)
+    const light = new DirectionalLight(0x47BA87, 2)
+    light.position.set(0, -2, 1)
     scene.add(light)
 
-    const backLight = new DirectionalLight(0xFFFFFF, 2)
-    backLight.position.set(0, 0, -1)
+    const backLight = new DirectionalLight(0x47BA87, 2)
+    backLight.position.set(0, 2, -1)
     scene.add(backLight)
 
+    // Stars
     const starGeometry = new BufferGeometry()
     const starMaterial = new PointsMaterial({color: 0xFFFFFF})
     const starVertices = []
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 10000; i++) {
       const x = (Math.random() - 0.5) * 2000
       const y = (Math.random() - 0.5) * 2000
       const z = (Math.random() - 0.5) * 2000
@@ -179,16 +188,26 @@ export default {
 
         intersects[0].object.geometry.attributes.color.needsUpdate = true
 
+        let colorInit = "42B883"
+        const rInit = parseInt(colorInit.substring(0, 2), 16) / 255;
+        const gInit = parseInt(colorInit.substring(2, 4), 16) / 255;
+        const bInit = parseInt(colorInit.substring(4, 6), 16) / 255;
+
+        let colorHover = "3C3C3C"
+        const rHover = parseInt(colorHover.substring(0, 2), 16) / 255;
+        const gHover = parseInt(colorHover.substring(2, 4), 16) / 255;
+        const bHover = parseInt(colorHover.substring(4, 6), 16) / 255;
+
         const initialColor = {
-          r: 0,
-          g: 0.19,
-          b: 0.4
+          r: rInit,
+          g: gInit,
+          b: bInit
         }
 
         const hoverColor = {
-          r: 0.1,
-          g: 0.5,
-          b: 1
+          r: rHover,
+          g: gHover,
+          b: bHover
         }
 
         gsap.to(hoverColor, {
@@ -270,7 +289,7 @@ export default {
         duration: 1.5,
         delay: 1.5,
         onComplete: () => {
-          this.$router.push('/work')
+          this.$router.push('/home')
         }
       })
     })
