@@ -1,0 +1,12 @@
+{
+  "greeting": "Hello, I am ",
+  "description": "Nice to meet you. I am a passionate technology enthusiast who strives daily to improve and contribute significantly to this fascinating world of web development.",
+  "language": {
+    "english": "English",
+    "spanish": "Spanish"
+  },
+  "mode": {
+    "dark": "Dark",
+    "light": "Light"
+  }
+}

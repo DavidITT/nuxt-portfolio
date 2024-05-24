@@ -1,0 +1,12 @@
+{
+  "greeting": "Hola, soy",
+  "description": "Encantado de conocerte. Soy un apasionado de la tecnología que se esfuerza diariamente por mejorar y contribuir significativamente a este fascinante mundo del desarrollo web. Mi compromiso radica en explorar constantemente nuevas posibilidades, aprender de las experiencias y hacer mi contribución para impulsar la innovación en este emocionante campo tecnológico.",
+  "language": {
+    "english": "Inglés",
+    "spanish": "Español"
+  },
+  "mode": {
+    "dark": "Oscuro",
+    "light": "Claro"
+  }
+}

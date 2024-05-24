@@ -16,6 +16,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/vue-fontawesome": "^3.0.6",
     "@nuxtjs/tailwindcss": "^6.11.4",
+    "flowbite": "^2.3.0",
     "gsap": "^3.12.5",
     "i": "^0.3.7",
     "npm": "^10.5.0",
@@ -25,6 +26,8 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@nuxtjs/google-fonts": "^3.2.0"
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/i18n": "^8.0.0",
+    "sass": "^1.77.2"
   }
 }

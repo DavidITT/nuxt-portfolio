@@ -87,8 +87,6 @@ export default {
       const g = parseInt(hexColor.substring(2, 4), 16) / 255;
       const b = parseInt(hexColor.substring(4, 6), 16) / 255;
 
-      console.log(r + ',' + g + ', ' + b)
-
       for (let i = 0; i < planeMesh.geometry.attributes.position.count; i++) {
         colors.push(r, g, b);
       }
