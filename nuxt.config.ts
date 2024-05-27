@@ -17,7 +17,7 @@ export default defineNuxtConfig({
             { code: 'es', name: 'Español', iso: 'es-ES', file: 'es-ES.json' },
             { code: 'en', name: 'English', iso: 'en-US', file: 'en-US.json' }
         ],
-        defaultLocale: "es",
+        defaultLocale: "en",
         langDir: 'lang/',
         lazy: true,
         detectBrowserLanguage: false,
@@ -27,9 +27,10 @@ export default defineNuxtConfig({
         viewer: true,
     },
     build: {
-        transpile: ['three']
+        transpile: ['three'],
     },
     css: [
         '@fortawesome/fontawesome-svg-core/styles.css'
-    ]
+    ],
+    plugins: ['~/plugins/fontawesome.js'],
 })

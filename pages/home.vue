@@ -12,24 +12,22 @@
                id="description">
               {{ $t('description')}}
             </p>
-
             <div class="mt-5 flex w-full justify-center md:justify-start">
               <font-awesome-icon :icon="['fab', 'github']"
                                  id="github-icon"
                                  class="custom-icon"
                                  :size="iconSize" role="button"
-                                 @click="goTo('github')"></font-awesome-icon>
+                                 @click="goTo('github')"/>
               <font-awesome-icon :icon="['fab', 'linkedin']"
                                  id="linkedin-icon"
                                  class="custom-icon"
                                  :size="iconSize" role="button"
-                                 @click="goTo('linkedin')"></font-awesome-icon>
+                                 @click="goTo('linkedin')"/>
               <font-awesome-icon :icon="['fas', 'envelope']"
-
                                  id="email-icon"
                                  class="custom-icon"
                                  :size="iconSize" role="button"
-                                 @click="goTo('email')"></font-awesome-icon>
+                                 @click="goTo('email')"/>
             </div>
           </div>
 
@@ -47,6 +45,10 @@
 <script setup>
 import {onMounted} from 'vue'
 import {animateElements} from "../utils/home/gsapAnimations.js";
+
+definePageMeta({
+  layout: 'main'
+})
 
 const windowWidth = ref(0);
 

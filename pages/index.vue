@@ -299,6 +299,11 @@ export default {
     })
   }
 }
+
+definePageMeta({
+  layout: 'default'
+})
+
 </script>
 
 <style>
