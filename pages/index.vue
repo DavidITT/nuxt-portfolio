@@ -1,17 +1,21 @@
 <template>
   <div>
     <canvas ref="canvas"></canvas>
+    <div class="absolute text-white language">
+       <Language/>
+    </div>
     <div class="absolute text-white text-center w-full max-w-2xl px-6" id="container"
          style="top: 50%; transform:translate(-50%, -50%); left:50%">
       <blockquote>
         <h1 id="name_dev" class="font-space-mono text-sm uppercase tracking-wide mb-3 text-lg opacity-0"
             style="transform: translateY(30px)">David Villeda</h1>
-        <p id="blockuote_favorite" class="font-exo text-4xl uppercase opacity-0" style="transform: translateY(30px)">"Is
-          not an error, is an opportunity to improve my code"</p>
+        <p id="blockuote_favorite" class="font-exo text-4xl uppercase opacity-0" style="transform: translateY(30px)">
+          {{ $t('welcome')}}
+        </p>
       </blockquote>
       <a href="https://github.com/DavidITT" class="opacity-0" id="work_button">
         <button class="border px-4 py-2 rounded-lg text-sm font-space-mono mt-5 hover:bg-white hover:text-gray-800"
-                style="transform: translateY(30px)">View my work
+                style="transform: translateY(30px)">  {{ $t('welcome-btn')}}
         </button>
       </a>
     </div>
@@ -37,10 +41,12 @@ import {
   PointsMaterial
 } from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
-
+import { useI18n } from 'vue-i18n';
 
 export default {
   mounted() {
+
+    const { locale } = useI18n()
 
     const world = {
       plane: {
@@ -287,7 +293,7 @@ export default {
         duration: 1.5,
         delay: 1.5,
         onComplete: () => {
-          this.$router.push('/home')
+          this.$router.push(`${locale.value}/home`)
         }
       })
     })
@@ -300,14 +306,13 @@ export default {
   }
 }
 
-definePageMeta({
-  layout: 'default'
-})
-
 </script>
 
 <style>
 .absolute {
   position: absolute;
+}
+.language {
+  top: 8px; right:12px;
 }
 </style>

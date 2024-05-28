@@ -1,6 +1,6 @@
 <template>
   <Navbar/>
-  <main class="bg-white dark:bg-[#2D465C]">
+  <main class="content">
     <slot/>
   </main>
 </template>
@@ -26,15 +26,21 @@ useHead({
 <style>
 
 body {
-  margin: 0;
+  margin-top: 0;
   -webkit-font-smoothing: antialiased;
+  @apply  bg-white dark:bg-[#2D465C];
 }
 
-.font-space-mono {
-  font-family: 'Space Mono', sans-serif;
+.content {
+  padding-top: 68px;
 }
 
-.font-exo {
-  font-family: 'Exo 2', sans-serif;
+@media (min-width: 768px) {
+  .content {
+    padding-top: 68px;
+  }
 }
+
+
+
 </style>

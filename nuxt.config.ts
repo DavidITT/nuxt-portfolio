@@ -21,6 +21,7 @@ export default defineNuxtConfig({
         langDir: 'lang/',
         lazy: true,
         detectBrowserLanguage: false,
+        strategy: 'prefix',
     },
     tailwindcss: {
         exposeConfig: true,

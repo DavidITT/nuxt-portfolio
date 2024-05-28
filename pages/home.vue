@@ -1,7 +1,7 @@
 <template>
-  <div class="h-screen container mx-auto">
-    <section class="overflow-hidden p-2 md:p-5 2xl:pt-16">
-      <div class=" mx-auto p-4 lg:py-18  lg:px-7 max-w-7xl rounded-lg border-4 border-[#42B883]">
+  <div class="container mx-auto">
+    <section class="overflow-hidden p-2 md:p-5 2xl:pt-16 my-12">
+      <div class=" mx-auto p-4 lg:py-18  lg:px-7 max-w-7xl rounded-lg">
         <div class="grid items-center grid-cols-1 md:grid-cols-2">
           <div>
             <h2 class="text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl mt-5 mb-5 md:mb-0 md:mt-0 text-[#2D465C] dark:text-white"
@@ -30,7 +30,6 @@
                                  @click="goTo('email')"/>
             </div>
           </div>
-
           <div class="relative">
             <div class="absolute inset-x-0 bottom-0 pt-10 -translate-x-1/2 left-1/2 w-100 blob-shape" id="shape"/>
             <img class="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom"
