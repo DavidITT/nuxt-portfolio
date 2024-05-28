@@ -42,10 +42,11 @@ import {
 } from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import { useI18n } from 'vue-i18n';
+import { useRouter } from 'vue-router';
 
 export default {
   mounted() {
-
+    const router = useRouter();
     const { locale } = useI18n()
 
     const world = {
@@ -293,7 +294,7 @@ export default {
         duration: 1.5,
         delay: 1.5,
         onComplete: () => {
-          this.$router.push(`${locale.value}/home`)
+          router.push(`/${locale.value}/home`)
         }
       })
     })
