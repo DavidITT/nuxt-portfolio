@@ -1,7 +1,7 @@
 <template>
   <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <NuxtLink :to="localizedRoute('/home')">
+      <NuxtLink to="/home">
         <div class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="~/assets/logo/logo.png" class="h-8" alt="David Logo"/>
           <span class="self-center text-2xl font-semibold whitespace-nowrap text-[#2D465C] dark:text-white">David Villeda</span>
@@ -35,13 +35,3 @@
     </div>
   </nav>
 </template>
-
-<script setup>
-
-const { locale } = useI18n();
-
-const localizedRoute = (path) => {
-  return `/${locale.value}${path}`;
-};
-
-</script>

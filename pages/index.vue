@@ -41,13 +41,11 @@ import {
   PointsMaterial
 } from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
-import { useI18n } from 'vue-i18n';
 import { useRouter } from 'vue-router';
 
 export default {
   mounted() {
     const router = useRouter();
-    const { locale } = useI18n()
 
     const world = {
       plane: {
@@ -294,7 +292,7 @@ export default {
         duration: 1.5,
         delay: 1.5,
         onComplete: () => {
-          router.push(`/${locale.value}/home`)
+          router.push(`/home`)
         }
       })
     })

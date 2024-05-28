@@ -20,8 +20,8 @@ export default defineNuxtConfig({
         defaultLocale: "en",
         langDir: 'lang/',
         lazy: true,
-        detectBrowserLanguage: false,
-        strategy: 'prefix',
+        strategy:'no_prefix',
+        detectBrowserLanguage:false,
     },
     tailwindcss: {
         exposeConfig: true,
