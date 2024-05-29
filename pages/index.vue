@@ -42,8 +42,10 @@ import {
 } from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import { useRouter } from 'vue-router';
+import Language from "../components/main/Language.vue";
 
 export default {
+  components: {Language},
   mounted() {
     const router = useRouter();
 

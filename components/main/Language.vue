@@ -10,7 +10,16 @@
 const {locale, setLocale} = useI18n()
 
 const changeLanguage = () => {
-  setLocale(locale.value === 'en' ? 'es' : 'en');
+  const newLocale = locale.value === 'en' ? 'es' : 'en';
+  setLocale(newLocale);
+  localStorage.setItem('preferred-locale', newLocale);
 }
+
+onMounted(() => {
+  const storedLocale = localStorage.getItem('preferred-locale');
+  if (storedLocale) {
+    setLocale(storedLocale);
+  }
+});
 
 </script>
