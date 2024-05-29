@@ -35,3 +35,10 @@
     </div>
   </nav>
 </template>
+<script>
+import Language from "./Language.vue";
+import ToggleMode from "./ToggleMode.vue";
+export default {
+  components: {ToggleMode, Language}
+}
+</script>

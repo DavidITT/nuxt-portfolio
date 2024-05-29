@@ -1,8 +1,10 @@
 {
   "welcome": "Is not an error, is an opportunity to improve my code",
   "welcome-btn": "View my work",
-  "greeting": "Hello, I am ",
-  "description": "Nice to meet you. I am a passionate technology enthusiast who strives daily to improve and contribute significantly to this fascinating world of web development.",
+  "rol": "WEB DEVELOPER",
+  "greeting": "Hello, I am",
+  "description": "I am a passionate web developer with 4 years of experience, specializing in creating innovative and functional web applications. I have worked on a variety of collaborative projects, excelling in the design and development of parcel and messaging systems, as well as the implementation of comprehensive e-commerce platforms, covering both the client-side and the administrative side. My ability to combine advanced technology and creativity allows me to deliver efficient and high-quality web solutions.",
+  "cv_text": "Show CV",
   "language": {
     "english": "English",
     "spanish": "Spanish"

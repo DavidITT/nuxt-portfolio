@@ -1,6 +1,6 @@
 <template>
   <button @click="changeLanguage"
-          class="px-2 py-2 text-sm text-gray-700 bg-white rounded-md dark:bg-gray-700 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-600 flex justify-between items-center">
+          class="px-2 py-2 text-sm text-gray-700 dark:text-gray-400 flex justify-between items-center hover:text-[#01B47C] dark:hover:text-[#01B47C]">
     <span>{{ locale === 'en' ? 'es' : 'en' }}</span>
   </button>
 </template>

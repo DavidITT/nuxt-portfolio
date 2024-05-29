@@ -53,9 +53,47 @@ export const animateElements = () => {
             opacity: 1,
             scale: 1,
             ease: 'Power1.easeOutIn',
-            delay: 0.6,
+            delay: 0.8,
             onComplete: () => {
                 gsap.to("#email-icon", {
+                    scale: .5,
+                    duration: 0.4,
+                    yoyo: true,
+                    repeat: 1,
+                    ease: 'Power1.easeInOut'
+                });
+            }
+        }
+    );
+
+    gsap.fromTo("#instagram-icon",
+        {opacity: 0, scale: 1.2},
+        {
+            opacity: 1,
+            scale: 1,
+            ease: 'Power1.easeOutIn',
+            delay: 0.6,
+            onComplete: () => {
+                gsap.to("#instagram-icon", {
+                    scale: .5,
+                    duration: 0.4,
+                    yoyo: true,
+                    repeat: 1,
+                    ease: 'Power1.easeInOut'
+                });
+            }
+        }
+    );
+
+    gsap.fromTo("#cv",
+        {opacity: 0, scale: 1.2},
+        {
+            opacity: 1,
+            scale: 1,
+            ease: 'Power1.easeOutIn',
+            delay: 0.8,
+            onComplete: () => {
+                gsap.to("#cv", {
                     scale: .5,
                     duration: 0.4,
                     yoyo: true,
@@ -77,4 +115,5 @@ export const animateElements = () => {
     gsap.fromTo("#photo",
         {opacity: 0,},
         {opacity: 1, ease: 'Power1.easeOutIn', delay: 1.4});
+
 }

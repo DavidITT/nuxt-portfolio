@@ -7,6 +7,8 @@
 
 <script setup>
 
+import Navbar from "../components/main/Navbar.vue";
+
 useHead({
   titleTemplate: 'David Villeda',
   app: {

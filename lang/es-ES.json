@@ -1,8 +1,10 @@
 {
   "welcome": "No es un error, es una oportunidad de mejorar mi codigo",
   "welcome-btn": "Ver mi trabajo",
+  "rol": "DESARROLLADOR WEB",
   "greeting": "Hola, soy",
-  "description": "Encantado de conocerte. Soy un apasionado de la tecnología que se esfuerza diariamente por mejorar y contribuir significativamente a este fascinante mundo del desarrollo web. Mi compromiso radica en explorar constantemente nuevas posibilidades, aprender de las experiencias y hacer mi contribución para impulsar la innovación en este emocionante campo tecnológico.",
+  "description": "Soy un apasionado desarrollador web con 4 años de experiencia, especializado en la creación de aplicaciones web innovadoras y funcionales. He trabajado en una variedad de proyectos colaborativos, destacándome en el diseño y desarrollo de sistemas de paquetería y mensajería, así como en la implementación de completas plataformas de comercio electrónico, abarcando tanto el lado del cliente como el administrativo. ",
+  "cv_text": "Mostrar CV",
   "language": {
     "english": "Inglés",
     "spanish": "Español"
