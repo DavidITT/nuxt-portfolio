@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row justify-start">
-    <div class="flex w-1/2 justify-start">
+    <div class="flex w-1/2 justify-start mr-5">
       <font-awesome-icon :icon="['fab', 'github']"
                          id="github-icon"
                          class="custom-icon"
@@ -21,13 +21,7 @@
                          class="custom-icon"
                          :size="iconSize" role="button"
                          @click="goTo('email')"/>
-
     </div>
-    <a :href="locale === 'en' ? '/David_Villeda_CV_EN.pdf' : '/David_Villeda_CV_ES.pdf'"
-       class="text-[#9B51E0] font-bold hover:border-b-4 hover:border-[#9B51E0] transition duration-500 ease-in-out text-[#9B51E0] text-xl flex justify-center"
-       target="_blank" id="cv">
-      {{ $t('cv_text') }}
-    </a>
   </div>
 </template>
 
@@ -80,6 +74,7 @@ onMounted(() => {
 
 <style scoped lang="scss">
 .custom-icon {
+  flex-shrink: 0;
   margin-right: .9rem;
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 

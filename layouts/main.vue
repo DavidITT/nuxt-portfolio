@@ -16,7 +16,7 @@ import Navbar from "../components/main/Navbar.vue";
 body {
   margin-top: 0;
   -webkit-font-smoothing: antialiased;
-  @apply  bg-white dark:bg-[#2D465C];
+  @apply  bg-white dark:bg-[#081f33];
 }
 
 .content {

@@ -1,10 +1,17 @@
 {
   "welcome": "No es un error, es una oportunidad de mejorar mi codigo",
   "welcome-btn": "Ver mi trabajo",
-  "rol": "DESARROLLADOR WEB",
-  "greeting": "Hola, soy",
-  "description": "Soy un apasionado desarrollador web con 4 años de experiencia, especializado en la creación de aplicaciones web innovadoras y funcionales. He trabajado en una variedad de proyectos colaborativos, destacándome en el diseño y desarrollo de sistemas de paquetería y mensajería, así como en la implementación de completas plataformas de comercio electrónico, abarcando tanto el lado del cliente como el administrativo. ",
+  "rol": "WEB DEVELOPER",
+  "phrase": "I am excited to discover new opportunities and bring my knowledge and experience to the world of web development. I am ready to take on any challenge and contribute to the success of your next project!",
+  "about1": "Hello! I am a passionate web developer with 4 years of experience, specializing in creating dynamic and efficient web applications. Throughout my career, I have been involved in numerous collaborative projects, excelling in the development of messaging and parcel systems, as well as implementing e-commerce platforms.",
+  "about2": "My expertise centers around using advanced technologies such as Laravel and Vue.js, enabling me to develop robust and scalable web solutions. I am characterized by being empathetic and responsible, always seeking new challenges and opportunities to continue learning and improving my skills.",
   "cv_text": "Mostrar CV",
+  "links": {
+    "about": "ABOUT ME",
+    "experience": "EXPERIENCE",
+    "projects": "PROJECTS",
+    "cv": "Show CV"
+  },
   "language": {
     "english": "Inglés",
     "spanish": "Español"
