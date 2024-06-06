@@ -29,7 +29,7 @@
                 :class="['group flex items-center py-3', { 'active': link.id === activeLink }]"
                 :href="link.href"
                 :target="link.target || '_self'"
-                @click="handleClick(link.id, $event)"
+                @click="handleClick(link.id, $event, link.target)"
             >
           <span
               :class="[
@@ -40,7 +40,7 @@
               <span
                   :class="[
               'nav-text text-xs font-bold uppercase tracking-widest',
-              { 'text-emerald-500': link.id === activeLink, 'text-[#9B51E0] group-hover:text-[#01B47C] group-focus-visible:text-[#01B47C]': true }
+              { 'text-emerald-500': link.id === activeLink && link.id !== 'cv', 'text-[#9B51E0] group-hover:text-[#01B47C] group-focus-visible:text-[#01B47C]': true }
             ]"
               >
             {{ link.text }}
@@ -81,14 +81,19 @@ const navLinks = computed(() => {
 });
 
 const extractStaticValue = (obj) => {
-  return obj.body.static;
+  return obj?.body?.static || obj;
 }
 
 const setActiveLink = (linkId) => {
   activeLink.value = linkId;
 }
 
-function handleClick(linkId, event) {
+function handleClick(linkId, event, target) {
+
+  if (target === '_blank') {
+    activeLink.value = 'about';
+    return;
+  }
   event.preventDefault();
   activeLink.value = linkId;
   emit('update:activeSection', linkId);

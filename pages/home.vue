@@ -3,20 +3,20 @@
     <div class="lg:flex lg:justify-between lg:gap-4">
       <HeaderProfile  @update:activeSection="updateActiveSection"/>
       <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
-        <template class="hidden lg:block">
-          <About v-show="activeSection === 'about'"/>
-          <Experience v-show="activeSection === 'experience'"/>
-          <Projects v-show="activeSection === 'projects'"/>
-          <Technologies v-show="activeSection === 'technologies'"/>
-          <Certificates v-show="activeSection === 'certificates'"/>
-        </template>
-        <template class="block lg:hidden">
+        <div class="hidden lg:block">
+          <About v-if="activeSection === 'about'"/>
+          <Experience v-if="activeSection === 'experience'"/>
+          <Projects v-if="activeSection === 'projects'"/>
+          <Technologies v-if="activeSection === 'technologies'"/>
+          <Certificates v-if="activeSection === 'certificates'"/>
+        </div>
+        <div class="block lg:hidden">
           <About/>
           <Experience/>
           <Projects/>
           <Technologies/>
           <Certificates/>
-        </template>
+        </div>
         <!--        <section id="experience" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"-->
         <!--                 aria-label="Work experience">-->
         <!--          <div-->
