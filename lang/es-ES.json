@@ -7,12 +7,12 @@
   "about2": "Mi experiencia se centra en el uso de tecnologías avanzadas como Laravel y Vue.js, permitiéndome desarrollar soluciones web robustas y escalables. Me caracterizo por ser una persona empática y responsable, siempre en busca de nuevos desafíos y oportunidades para seguir aprendiendo y mejorando mis habilidades..",
   "cv_text": "Show CV",
   "links": {
-    "about": { "text": "Sobre mí", "href": "#about" },
-    "experience": { "text": "Experiencia", "href": "#experience" },
-    "projects": { "text": "Proyectos", "href": "#projects" },
-    "technologies": { "text": "Tecnologias", "href": "#technologies" },
-    "certificates": { "text": "Certificados", "href": "#certificates" },
-    "cv": { "text": "Currículum", "href": "/David_Villeda_CV_ES.pdf", "target": "_blank" }
+    "about": {"name":"about", "text": "Sobre mí", "href": "#about" },
+    "experience": {"name":"experience", "text": "Experiencia", "href": "#experience" },
+    "projects": {"name":"projects", "text": "Proyectos", "href": "#projects" },
+    "technologies": {"name":"technologies", "text": "Tecnologias", "href": "#technologies" },
+    "certificates": { "name":"certificates","text": "Certificados", "href": "#certificates" },
+    "cv": {"name":"cv", "text": "Currículum", "href": "/David_Villeda_CV_ES.pdf", "target": "_blank" }
   },
   "language": {
     "english": "Inglés",
