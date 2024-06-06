@@ -81,6 +81,9 @@ const navLinks = computed(() => {
 });
 
 const extractStaticValue = (obj) => {
+  if (obj?.B?.S) {
+    return obj.B.S;
+  }
   return obj?.body?.static || obj;
 }
 
