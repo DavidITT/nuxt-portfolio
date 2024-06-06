@@ -21,6 +21,7 @@ export default defineNuxtConfig({
         langDir: 'lang/',
         lazy: true,
         strategy:'no_prefix',
+        fallbackLocale: 'en',
         detectBrowserLanguage:false,
     },
     tailwindcss: {
