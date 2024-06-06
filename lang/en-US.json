@@ -1,16 +1,18 @@
 {
   "welcome": "Is not an error, is an opportunity to improve my code",
   "welcome-btn": "View my work",
-  "rol": "DESARROLLADOR WEB",
-  "phrase": "¡Ansioso por abrazar nuevas oportunidades y desafíos, estoy listo para aprovechar mis habilidades y experiencia para impulsar el éxito de tu próximo proyecto de desarrollo web!\n",
-  "about1": "¡Hola! Soy un apasionado desarrollador web con 4 años de experiencia, especializado en la creación de aplicaciones web dinámicas y eficientes. A lo largo de mi carrera, he participado en numerosos proyectos colaborativos, destacando en el desarrollo de sistemas de mensajería y paquetería, así como en la implementación de plataformas de comercio electrónico.",
-  "about2": "Mi experiencia se centra en el uso de tecnologías avanzadas como Laravel y Vue.js, permitiéndome desarrollar soluciones web robustas y escalables. Me caracterizo por ser una persona empática y responsable, siempre en busca de nuevos desafíos y oportunidades para seguir aprendiendo y mejorando mis habilidades..",
-  "cv_text": "Show CV",
+  "rol": "WEB DEVELOPER",
+  "phrase": "I am excited to discover new opportunities and bring my knowledge and experience to the world of web development. I am ready to take on any challenge and contribute to the success of your next project!",
+  "about1": "Hello! I am a passionate web developer with 4 years of experience, specializing in creating dynamic and efficient web applications. Throughout my career, I have been involved in numerous collaborative projects, excelling in the development of messaging and parcel systems, as well as implementing e-commerce platforms.",
+  "about2": "My expertise centers around using advanced technologies such as Laravel and Vue.js, enabling me to develop robust and scalable web solutions. I am characterized by being empathetic and responsible, always seeking new challenges and opportunities to continue learning and improving my skills.",
+  "cv_text": "Mostrar CV",
   "links": {
-    "about": "ACERCA DE",
-    "experience": "EXPERIENCIA",
-    "projects": "PROYECTOS",
-    "cv": "Mostrar CV"
+    "about": { "text": "About", "href": "#about" },
+    "experience": { "text": "Experience", "href": "#experience" },
+    "projects": { "text": "Projects", "href": "#projects" },
+    "technologies": { "text": "Technologies", "href": "#technologies" },
+    "certificates": { "text": "Certificates", "href": "#certificates" },
+    "cv": { "text": "Show CV", "href": "David_Villeda_CV_EN.pdf", "target": "_blank" }
   },
   "language": {
     "english": "English",
