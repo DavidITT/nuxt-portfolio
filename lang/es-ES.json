@@ -9,10 +9,10 @@
   "links": {
     "about": {"name":"about", "text": "Sobre mí", "href": "#about" },
     "experience": {"name":"experience", "text": "Experiencia", "href": "#experience" },
-    "projects": {"name":"projects", "text": "Proyectos", "href": "#projects" },
-    "technologies": {"name":"technologies", "text": "Tecnologias", "href": "#technologies" },
+    "works": {"name":"projects", "text": "Proyectos", "href": "#projects" },
+    "technologies": {"name":"technologies", "text": "Tecnologias que uso", "href": "#technologies" },
     "certificates": { "name":"certificates","text": "Certificados", "href": "#certificates" },
-    "cv": {"name":"cv", "text": "Currículum", "href": "/David_Villeda_CV_ES.pdf", "target": "_blank" }
+    "cv": {"name":"cv", "text": "Ver CV", "href": "/David_Villeda_CV_ES.pdf", "target": "_blank" }
   },
   "language": {
     "english": "Inglés",

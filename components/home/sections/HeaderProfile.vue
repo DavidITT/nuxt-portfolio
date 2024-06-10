@@ -18,7 +18,7 @@
       <nav class="nav hidden lg:block" aria-label="In-page jump links">
         <ul class="mt-16 w-max">
           <li>
-            <a :class="['group flex items-center py-3', { 'active': $t('links.about.name') === activeLink }]"
+            <a :class="['group flex items-center py-3 cursor-pointer', { 'active': $t('links.about.name') === activeLink }]"
                @click="handleClick($t('links.about.name'), $event)">
                       <span :class="['nav-indicator mr-4 h-1 w-5 transition-transform duration-300 transform', { 'rotate-90 bg-emerald-500': $t('links.about.name') === activeLink, 'group-hover:rotate-90 group-hover:bg-emerald-500 group-focus-visible:rotate-45 group-focus-visible:bg-teal-400': true }]"></span>
                       <span :class="['nav-text text-xs font-bold uppercase tracking-widest',{ 'text-emerald-500': $t('links.about.name') === activeLink, 'text-[#9B51E0] group-hover:text-[#01B47C] group-focus-visible:text-[#01B47C]': true }]">
@@ -27,7 +27,7 @@
             </a>
           </li>
           <li>
-            <a :class="['group flex items-center py-3', { 'active': $t('links.experience.name') === activeLink }]"
+            <a :class="['group flex items-center py-3 cursor-pointer', { 'active': $t('links.experience.name') === activeLink }]"
                @click="handleClick($t('links.experience.name'), $event)">
               <span :class="['nav-indicator mr-4 h-1 w-5 transition-transform duration-300 transform', { 'rotate-90 bg-emerald-500': $t('links.experience.name') === activeLink, 'group-hover:rotate-90 group-hover:bg-emerald-500 group-focus-visible:rotate-45 group-focus-visible:bg-teal-400': true }]"></span>
               <span :class="['nav-text text-xs font-bold uppercase tracking-widest',{ 'text-emerald-500': $t('links.experience.name') === activeLink, 'text-[#9B51E0] group-hover:text-[#01B47C] group-focus-visible:text-[#01B47C]': true }]">
@@ -36,16 +36,16 @@
             </a>
           </li>
           <li>
-            <a :class="['group flex items-center py-3', { 'active': $t('links.projects.name') === activeLink }]"
-               @click="handleClick($t('links.projects.name'), $event)">
-              <span :class="['nav-indicator mr-4 h-1 w-5 transition-transform duration-300 transform', { 'rotate-90 bg-emerald-500': $t('links.projects.name') === activeLink, 'group-hover:rotate-90 group-hover:bg-emerald-500 group-focus-visible:rotate-45 group-focus-visible:bg-teal-400': true }]"></span>
-              <span :class="['nav-text text-xs font-bold uppercase tracking-widest',{ 'text-emerald-500': $t('links.projects.name') === activeLink, 'text-[#9B51E0] group-hover:text-[#01B47C] group-focus-visible:text-[#01B47C]': true }]">
-                          {{ $t('links.projects.text') }}
+            <a :class="['group flex items-center py-3 cursor-pointer', { 'active': $t('links.works.name') === activeLink }]"
+               @click="handleClick($t('links.works.name'), $event)">
+              <span :class="['nav-indicator mr-4 h-1 w-5 transition-transform duration-300 transform', { 'rotate-90 bg-emerald-500': $t('links.works.name') === activeLink, 'group-hover:rotate-90 group-hover:bg-emerald-500 group-focus-visible:rotate-45 group-focus-visible:bg-teal-400': true }]"></span>
+              <span :class="['nav-text text-xs font-bold uppercase tracking-widest',{ 'text-emerald-500': $t('links.works.name') === activeLink, 'text-[#9B51E0] group-hover:text-[#01B47C] group-focus-visible:text-[#01B47C]': true }]">
+                          {{ $t('links.works.text') }}
                       </span>
             </a>
           </li>
           <li>
-            <a :class="['group flex items-center py-3', { 'active': $t('links.technologies.name') === activeLink }]"
+            <a :class="['group flex items-center py-3 cursor-pointer', { 'active': $t('links.technologies.name') === activeLink }]"
                @click="handleClick($t('links.technologies.name'), $event)">
               <span :class="['nav-indicator mr-4 h-1 w-5 transition-transform duration-300 transform', { 'rotate-90 bg-emerald-500': $t('links.technologies.name') === activeLink, 'group-hover:rotate-90 group-hover:bg-emerald-500 group-focus-visible:rotate-45 group-focus-visible:bg-teal-400': true }]"></span>
               <span :class="['nav-text text-xs font-bold uppercase tracking-widest',{ 'text-emerald-500': $t('links.technologies.name') === activeLink, 'text-[#9B51E0] group-hover:text-[#01B47C] group-focus-visible:text-[#01B47C]': true }]">
@@ -54,7 +54,7 @@
             </a>
           </li>
           <li>
-            <a :class="['group flex items-center py-3', { 'active': $t('links.certificates.name') === activeLink }]"
+            <a :class="['group flex items-center py-3 cursor-pointer', { 'active': $t('links.certificates.name') === activeLink }]"
                @click="handleClick($t('links.certificates.name'), $event)">
               <span :class="['nav-indicator mr-4 h-1 w-5 transition-transform duration-300 transform', { 'rotate-90 bg-emerald-500': $t('links.certificates.name') === activeLink, 'group-hover:rotate-90 group-hover:bg-emerald-500 group-focus-visible:rotate-45 group-focus-visible:bg-teal-400': true }]"></span>
               <span :class="['nav-text text-xs font-bold uppercase tracking-widest',{ 'text-emerald-500': $t('links.certificates.name') === activeLink, 'text-[#9B51E0] group-hover:text-[#01B47C] group-focus-visible:text-[#01B47C]': true }]">
@@ -63,7 +63,7 @@
             </a>
           </li>
           <li>
-            <a :class="['group flex items-center py-3', { 'active': $t('links.cv.name') === activeLink }]"
+            <a :class="['group flex items-center py-3 cursor-pointer', { 'active': $t('links.cv.name') === activeLink }]"
                :href="locale === 'en' ? '/David_Villeda_CV_EN.pdf' : '/David_Villeda_CV_ES.pdf'">
               <span :class="['nav-indicator mr-4 h-1 w-5 transition-transform duration-300 transform', { 'rotate-90 bg-emerald-500': $t('links.cv.name') === activeLink, 'group-hover:rotate-90 group-hover:bg-emerald-500 group-focus-visible:rotate-45 group-focus-visible:bg-teal-400': true }]"></span>
               <span :class="['nav-text text-xs font-bold uppercase tracking-widest',{ 'text-emerald-500': $t('links.cv.name') === activeLink, 'text-[#9B51E0] group-hover:text-[#01B47C] group-focus-visible:text-[#01B47C]': true }]">
