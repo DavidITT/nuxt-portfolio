@@ -6,14 +6,71 @@
   "about1": "¡Hola! Soy un apasionado desarrollador web con 4 años de experiencia, especializado en la creación de aplicaciones web dinámicas y eficientes. A lo largo de mi carrera, he participado en numerosos proyectos colaborativos, destacando en el desarrollo de sistemas de mensajería y paquetería, así como en la implementación de plataformas de comercio electrónico.",
   "about2": "Mi experiencia se centra en el uso de tecnologías avanzadas como Laravel y Vue.js, permitiéndome desarrollar soluciones web robustas y escalables. Me caracterizo por ser una persona empática y responsable, siempre en busca de nuevos desafíos y oportunidades para seguir aprendiendo y mejorando mis habilidades..",
   "cv_text": "Show CV",
+  "present": "Actual",
   "links": {
-    "about": {"name":"about", "text": "Sobre mí", "href": "#about" },
-    "experience": {"name":"experience", "text": "Experiencia", "href": "#experience" },
-    "works": {"name":"projects", "text": "Proyectos", "href": "#projects" },
-    "technologies": {"name":"technologies", "text": "Tecnologias que uso", "href": "#technologies" },
-    "certificates": { "name":"certificates","text": "Certificados", "href": "#certificates" },
-    "cv": {"name":"cv", "text": "Ver CV", "href": "/David_Villeda_CV_ES.pdf", "target": "_blank" }
+    "about": {
+      "name": "about",
+      "text": "Sobre mí",
+      "href": "#about"
+    },
+    "experience": {
+      "name": "experience",
+      "text": "Experiencia",
+      "href": "#experience"
+    },
+    "works": {
+      "name": "projects",
+      "text": "Proyectos",
+      "href": "#projects"
+    },
+    "technologies": {
+      "name": "technologies",
+      "text": "Tecnologias que uso",
+      "href": "#technologies"
+    },
+    "certificates": {
+      "name": "certificates",
+      "text": "Certificados",
+      "href": "#certificates"
+    },
+    "cv": {
+      "name": "cv",
+      "text": "Ver CV",
+      "href": "/David_Villeda_CV_ES.pdf",
+      "target": "_blank"
+    }
   },
+  "experience": {
+    "threejs-module": {
+      "description": "Desarrollé un avanzado módulo de personalización de cajas utilizando la librería Three.js de JavaScript para el sitio web de KJOTA. Este módulo permite a los clientes visualizar de manera intuitiva y eficaz cómo se vería la impresión de su logotipo en nuestras cajas mediante un modelo 3D interactivo, accesible desde su dispositivo móvil o computadora."
+    },
+    "theboxboss": {
+      "description": "Encabecé el desarrollo desde cero de un e-Commerce para The Box Boss, una empresa gestionada por KJOTA que se especializa en la venta de cajas de cartón y materiales de embalaje en Estados Unidos. Este proyecto abarcó todas las etapas del desarrollo, desde la conceptualización hasta la implementación. "
+    },
+    "kjota": {
+      "description": "Lideré el desarrollo desde cero de un e-Commerce para KJOTA, una empresa especializada en la venta de cajas de cartón y materiales de embalaje. Este proyecto abarcó todo el ciclo de desarrollo, desde la conceptualización hasta la implementación. El e-Commerce está diseñado exclusivamente para compras y envíos dentro del Estado de México y Ciudad de México, con planes para expandir su cobertura en el futuro."
+    },
+    "boxitup": {
+      "description": "Responsable del desarrollo de un sistema web de personalización de cajas de cartón para una sucursal de KJOTA, una empresa dedicada a la manufactura de cajas de cartón y la venta de materiales de embalaje. Este proyecto se inspiró en el concepto de “Build a Bear”, pero orientado a la personalización de cajas de cartón mediante serigrafía."
+    },
+    "bullet-delivery": {
+      "description": "Desarrollé, junto con un equipo de trabajo, una aplicación móvil para el sistema web de Bullet Envios, orientada a sus repartidores. La aplicación, desarrollada en Flutter, tenía como objetivo mejorar el seguimiento de los paquetes y optimizar la eficiencia de los repartidores. Mediante la aplicación, los repartidores podían actualizar el estado del paquete escaneando un código QR y nproporcionar a los clientes un mejor tracking. Además, la aplicación ofrecía rutas de recolección y entrega integradas con Google Maps, mejorando la precisión y puntualidad de los servicios de paquetería."
+    },
+    "bullet-envios": {
+      "description": "Lideré el desarrollo, junto con un equipo de trabajo, un sistema web de paquetería y mensajería que operaba en selectas zonas del Estado de México y Ciudad de México. El sistema, diseñado con interfaces tanto para clientes como para administradores, mejoró significativamente la eficiencia y la experiencia del usuario en la gestión de envíos."
+    },
+    "dastur": {
+      "description": "Durante mis prácticas profesionales en D’ ASTUR SA de CV, desarrollé un sistema de control de producción para optimizar la gestión de la manufactura de cajas de cartón. El objetivo principal del proyecto fue reducir la generación de merma y mejorar la planificación y los tiempos de entrega de las órdenes de compra."
+    },
+    "satoritech": {
+      "description": "Responsable del diseño y desarrollo web de aplicaciones y sistemas para pequeñas y medianas empresas (PyMES). Mi trabajo se centró en crear interfaces de usuario intuitivas y funcionales, asegurando una experiencia de usuario óptima y cumpliendo con los requisitos específicos de cada cliente, utilizando de base y en colaboracion con un equipo una maquetacion en Adobe XD."
+    },
+    "government": {
+      "description": "Durante mi servicio social, desarrollé un sistema web integral que facilitó el registro y la selección de aspirantes a becas. Este sistema optimizó el proceso administrativo, mejorando la eficiencia en la gestión de becas otorgadas por la administración de ese año."
+    }
+  },
+  "more-text": "Mostrar mas",
+  "less-text": "Menos",
   "certificates": {
     "certificate": "Certificado",
     "course": "Curso",
