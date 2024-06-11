@@ -33,7 +33,7 @@
   "skills": {
     "test": "Testing",
     "version-control": "Version control",
-    "hosting": "Hosting"
+    "deploy": "Deploy"
   },
   "language": {
     "english": "English",
