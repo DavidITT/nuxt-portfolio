@@ -30,6 +30,11 @@
       }
     }
   },
+  "skills": {
+    "test": "Testing",
+    "version-control": "Version control",
+    "hosting": "Hosting"
+  },
   "language": {
     "english": "English",
     "spanish": "Spanish"

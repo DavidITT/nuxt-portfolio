@@ -30,6 +30,11 @@
       }
     }
   },
+  "skills": {
+    "test": "Pruebas",
+    "version-control": "Control de versiones",
+    "hosting": "Alojamiento web"
+  },
   "language": {
     "english": "Inglés",
     "spanish": "Español"
