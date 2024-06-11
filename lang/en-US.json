@@ -12,7 +12,23 @@
     "works": {"name":"projects", "text": "Projects", "href": "#projects" },
     "technologies": {"name":"technologies", "text": "Technologies I Use", "href": "#technologies" },
     "certificates": { "name":"certificates","text": "Certificates", "href": "#certificates" },
-    "cv": {"name":"cv", "text": "Show CV", "href": "/David_Villeda_CV_ES.pdf", "target": "_blank" },
+    "cv": {"name":"cv", "text": "Show CV", "href": "/David_Villeda_CV_ES.pdf", "target": "_blank" }
+  },
+  "certificates":{
+    "certificate": "Certificate",
+    "course": "Course",
+    "microsoft": {
+      "az900": {
+        "title": "Microsoft Certified: Azure Fundamentals AZ-900",
+        "description": "This certificate validates my knowledge of the fundamental concepts of cloud computing and Microsoft Azure services"
+      }
+    },
+    "mercatitlan": {
+      "google-ads": {
+        "title": "Google Ads Course",
+        "description": "Juan Lombana's Google Ads online course teaches everything from basic concepts to advanced advertising strategies on Google. It covers the creation and optimization of campaigns, effective use of keywords, and structuring ads to maximize return on investment."
+      }
+    }
   },
   "language": {
     "english": "English",

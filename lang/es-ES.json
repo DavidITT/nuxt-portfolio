@@ -14,6 +14,22 @@
     "certificates": { "name":"certificates","text": "Certificados", "href": "#certificates" },
     "cv": {"name":"cv", "text": "Ver CV", "href": "/David_Villeda_CV_ES.pdf", "target": "_blank" }
   },
+  "certificates": {
+    "certificate": "Certificado",
+    "course": "Curso",
+    "microsoft": {
+      "az900": {
+        "title": "Certificado Microsoft: Fundamentos de Azure AZ-900",
+        "description": "Este certificado valida mi conocimiento de los conceptos fundamentales de la computación en la nube y los servicios de Microsoft Azure."
+      }
+    },
+    "mercatitlan": {
+      "google-ads": {
+        "title": "Curso Google Ads",
+        "description": "El curso en línea de Google Ads de Juan Lombana enseña desde los conceptos básicos hasta estrategias avanzadas de publicidad en Google. Cubre la creación y optimización de campañas, uso efectivo de palabras clave y estructuración de anuncios para maximizar el retorno de inversión."
+      }
+    }
+  },
   "language": {
     "english": "Inglés",
     "spanish": "Español"
