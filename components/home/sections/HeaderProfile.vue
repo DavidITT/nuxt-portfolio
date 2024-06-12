@@ -64,7 +64,7 @@
           </li>
           <li>
             <a :class="['group flex items-center py-3 cursor-pointer', { 'active': $t('links.cv.name') === activeLink }]"
-               :href="locale === 'en' ? '/David_Villeda_CV_EN.pdf' : '/David_Villeda_CV_ES.pdf'">
+               :href="locale === 'en' ? '/David_Villeda_CV_EN.pdf' : '/David_Villeda_CV_ES.pdf'" target="_blank">
               <span :class="['nav-indicator mr-4 h-1 w-5 transition-transform duration-300 transform', { 'rotate-90 bg-emerald-500': $t('links.cv.name') === activeLink, 'group-hover:rotate-90 group-hover:bg-emerald-500 group-focus-visible:rotate-45 group-focus-visible:bg-teal-400': true }]"></span>
               <span :class="['nav-text text-xs font-bold uppercase tracking-widest',{ 'text-emerald-500': $t('links.cv.name') === activeLink, 'text-[#9B51E0] group-hover:text-[#01B47C] group-focus-visible:text-[#01B47C]': true }]">
                           {{ $t('links.cv.text') }}

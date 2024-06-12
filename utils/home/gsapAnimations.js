@@ -95,6 +95,25 @@ export const animateElements = () => {
         }
     );
 
+    gsap.fromTo("#cv-icon",
+        {opacity: 0, scale: 1.2},
+        {
+            opacity: 1,
+            scale: 1,
+            ease: 'Power1.easeOutIn',
+            delay: 0.8,
+            onComplete: () => {
+                gsap.to("#cv-icon", {
+                    scale: .5,
+                    duration: 0.4,
+                    yoyo: true,
+                    repeat: 1,
+                    ease: 'Power1.easeInOut'
+                });
+            }
+        }
+    );
+
     gsap.fromTo("#email-icon",
         {opacity: 0, x: 0},
         {opacity: 1, x: 0, ease: 'Power1.easeOutIn', delay: .9});
