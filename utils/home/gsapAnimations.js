@@ -12,13 +12,6 @@ export const animateElements = () => {
         {opacity: 0},
         {opacity: 1, ease: 'Power1.easeInOut', duration: 3});
 
-    gsap.fromTo("#about",
-        {
-            opacity: 0,
-            delay: 0.3
-        },
-        {opacity: 1, ease: 'Power1.easeInOut', duration: 3});
-
     gsap.fromTo("#github-icon",
         {opacity: 0, scale: 1.2},
         {

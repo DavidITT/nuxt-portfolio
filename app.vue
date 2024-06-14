@@ -6,7 +6,22 @@
 
 <script setup>
 import { useHead } from '#imports'
-import { initFlowbite } from 'flowbite'
+import { onMounted } from 'vue'
+import {
+  initFlowbite,
+  initAccordions,
+  initCarousels,
+  initCollapses,
+  initDials,
+  initDismisses,
+  initDrawers,
+  initDropdowns,
+  initModals,
+  initPopovers,
+  initTabs,
+  initTooltips } from 'flowbite'
+
+
 
 useHead({
   titleTemplate: 'David Villeda',
@@ -20,6 +35,17 @@ useHead({
 
 onMounted(() => {
   initFlowbite();
+  initAccordions();
+  initCarousels();
+  initCollapses();
+  initDials();
+  initDismisses();
+  initDrawers();
+  initDropdowns();
+  initModals();
+  initPopovers();
+  initTabs();
+  initTooltips();
 
   if (typeof window !== 'undefined') {
     document.documentElement.classList.add('dark')

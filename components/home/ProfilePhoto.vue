@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-full justify-center text-center">
+  <div id="about"  class="flex w-full justify-center text-center">
     <div class="relative">
       <div class="absolute blob-shape" id="shape"/>
       <img class="relative w-full sm:w-[10vw] md:w-[50vw] lg:w-[17vw] xl:w-[15vw] max-w-[50vw]"

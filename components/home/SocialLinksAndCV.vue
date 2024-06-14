@@ -27,7 +27,7 @@
                          @click="goTo('email')"/>
 
       <a :href="locale === 'en' ? '/David_Villeda_CV_EN.pdf' : '/David_Villeda_CV_ES.pdf'" target="_blank" title="CV">
-        <svg fill="currentColor" version="1.1"  xmlns="http://www.w3.org/2000/svg"
+        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg"
              width="32px" height="32px" class="custom-icon" id="cv-icon" viewBox="0 0 43.916 43.916"
              xml:space="preserve">
                 <g>
@@ -41,15 +41,14 @@
                 </g>
         </svg>
       </a>
-
-
     </div>
   </div>
 </template>
 
 <script setup>
 import {onMounted} from "vue";
-import {animateElements} from "../../utils/home/gsapAnimations.js";
+import {animateElements} from "~/utils/home/gsapAnimations.js";
+import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 
 const {locale} = useI18n()
 
