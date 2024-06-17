@@ -12,7 +12,7 @@
           <h3 class="font-medium leading-snug text-slate-200">
             <div class="flex items-center">
               <a class="inline-flex items-baseline font-medium leading-tight text-gray-700 hover:text-[#9B51E0] dark:text-slate-200 dark:hover:text-purple-500 focus-visible:text-teal-300 group/link text-base"
-                 href="https://www.kjota.mx/" target="_blank" rel="noreferrer noopener"
+                 href="https://kjota.mx/custom-boxes" target="_blank" rel="noreferrer noopener"
                  aria-label="FullStack - Kjota"><span
                   class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>FullStack - Kjota
                    </span>
