@@ -93,6 +93,18 @@
     "version-control": "Version control",
     "deploy": "Deploy"
   },
+  "404": {
+    "description": "It seems that the page or resource you are looking for is not available, or maybe...",
+    "list": {
+      "one": "You have accidentally deleted it",
+      "two": "It never existed",
+      "three": "It is still under construction\n"
+    },
+    "farewell":{
+      "description": "Anyway... feel free to explore or go back to the",
+      "link": "home page"
+    }
+  },
   "language": {
     "english": "English",
     "spanish": "Spanish"

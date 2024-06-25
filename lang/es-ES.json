@@ -93,6 +93,18 @@
     "version-control": "Control de versiones",
     "deploy": "Alojamiento web"
   },
+  "404": {
+    "description": "Parece que la pagina o recurso que estás buscando no está disponible, o quizas...",
+    "list": {
+      "one": "Lo hayas eliminado accidentalmente",
+      "two": "Nunca existio",
+      "three": "Aún esta en construcción\n"
+    },
+    "farewell":{
+      "description": "Como sea... sientete libre de explorar o de volver a la",
+      "link": "página principal"
+    }
+  },
   "language": {
     "english": "Inglés",
     "spanish": "Español"
