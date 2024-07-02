@@ -7,7 +7,7 @@
        id="description">
       {{ $t('about1') }}
     </p>
-    <p class="mt-3 text-base sm:text-lg md:text-lg leading-relaxed text-gray-600 md:mt-0 mb-6 dark:text-slate-300 text-justify"
+    <p class="mt-3 text-sm sm:text-lg md:text-lg leading-relaxed text-gray-600 md:mt-0 mb-6 dark:text-slate-300 text-justify"
        id="description">
       {{ $t('about2') }}
     </p>
