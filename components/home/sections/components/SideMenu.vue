@@ -28,7 +28,7 @@
                 @click.native="emit('toggleSide')"
             >
               <font-awesome-icon :icon="['fas', 'user']" size="lg" class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
-              <span class="ms-3 text-xl">About Me</span>
+              <span class="ms-3 text-xl">{{ $t('links.about.text') }}</span>
             </NuxtLink>
           </li>
           <li>
