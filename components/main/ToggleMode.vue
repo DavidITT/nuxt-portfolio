@@ -1,11 +1,11 @@
 <template>
   <div :class="{ dark: isDarkMode }">
     <button @click="toggleMode">
-                <span class="text-gray-700 hover:text-[#01B47C] dark:text-white dark:hover:text-[#01B47C]"
+                <span class="text-white hover:text-[#01B47C]"
                       v-if="isDarkMode">
                   <font-awesome-icon :icon="['fas', 'sun']" size="lg"/>
                 </span>
-      <span v-else class="text-gray-700] hover:text-[#01B47C] dark:text-white dark:hover:text-[#01B47C]">
+      <span v-else class="text-white hover:text-[#01B47C]">
                   <font-awesome-icon :icon="['far', 'moon']" size="lg"/>
                 </span>
     </button>

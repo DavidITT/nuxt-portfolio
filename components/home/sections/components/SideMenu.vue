@@ -4,11 +4,11 @@
   <div v-if="props.sideStatus === true"
        class="sidebar fixed top-0 bottom-0 block lg:hidden w-[330px] md:w-1/2 overflow-y-auto text-center bg-white dark:bg-gray-800 z-50 items-center">
     <header>
-      <div class="flex justify-between w-100 h-auto p-3 dark:bg-gray-900 border-b dark:border-b-0">
+      <div class="flex justify-between w-100 h-auto p-3 custom-bg-gradient border-b dark:border-b-0">
         <NuxtLink to="/home">
           <div class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="~/assets/logo/logo.png" class="h-8" alt="David Logo"/>
-            <span class="self-center text-2xl font-semibold whitespace-nowrap text-[#2D465C] dark:text-white">David Villeda</span>
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">David Villeda</span>
           </div>
         </NuxtLink>
 
@@ -93,10 +93,10 @@
         </ul>
       </ul>
     </div>
-    <div class="w-[330px] md:w-full p-3.5 bottom-0 absolute dark:bg-gray-900  border-t dark:border-0">
+    <div class="w-[330px] md:w-full p-3.5 bottom-0 absolute custom-bg-gradient  border-t dark:border-0">
 
         <div class="font-bold mb-3">
-          <span class="text-[#2D465C] dark:text-gray-300 text-lg">Contact me</span>
+          <span class="text-white text-lg">Contact me</span>
         </div>
         <SocialLinksAndCV class="justify-center"/>
 
@@ -133,6 +133,10 @@ const {locale} = useI18n()
 .sidebar-enter-to, .sidebar-leave {
   transform: translateX(0);
   opacity: 1;
+}
+
+.custom-bg-gradient {
+  background: linear-gradient(to right, #081F33 10%, #01B47C 50%, #081F33 90%);
 }
 
 </style>

@@ -104,7 +104,7 @@ onMounted(() => {
     transform: scale(1.1);
   }
 
-  @apply text-[#2D465C] dark:text-white dark:hover:text-[#01B47C] hover:text-[#01B47C] transition duration-300 ease-in-out transform hover:scale-110 mr-2
+  @apply text-white dark:hover:text-[#01B47C] hover:text-[#01B47C] transition duration-300 ease-in-out transform hover:scale-110 mr-2
 
 }
 </style>
