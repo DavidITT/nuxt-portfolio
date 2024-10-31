@@ -2,7 +2,7 @@
   <header
       class="text-center lg:text-left lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 ">
     <div>
-      <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl text-[#2D465C] dark:text-white"
+      <h1 class="text-4xl font-bold tracking-tight sm:text-5xl text-[#2D465C] dark:text-white"
           id="title">
             <span class="hover:border-b-4 hover:border-[#01B47C] transition duration-500 ease-in-out text-[#01B47C]"><a
                 href="/">David Villeda</a></span>
@@ -82,42 +82,21 @@
 
 <script setup>
 import {ref} from 'vue';
-import {computed} from 'vue';
 import {useI18n} from 'vue-i18n';
 import SocialLinksAndCV from "../SocialLinksAndCV.vue";
 import ProfilePhoto from "../ProfilePhoto.vue";
+import {useNavbarStore} from "~/stores/useNavbarStore.js";
 
-const {locale, messages} = useI18n();
-const activeLink = ref('about');
-const emit = defineEmits(['update:activeSection']);
+const {locale} = useI18n();
+const activeLink = ref('about')
 
-const navLinks = computed(() => {
-  const currentLocale = locale.value;
-  const links = messages.value[currentLocale].links;
+const navbarStore = useNavbarStore()
 
-  return Object.keys(links).map(key => ({
-    id: key,
-    text: extractStaticValue(links[key].text),
-    href: extractStaticValue(links[key].href),
-    target: links[key].target ? extractStaticValue(links[key].target) : '_self'
-  }));
-});
 
-const extractStaticValue = (obj) => {
-  if (obj?.B?.S) {
-    return obj.B.S;
-  }
-  return obj?.body?.static || obj;
-}
-
-const setActiveLink = (linkId) => {
-  activeLink.value = linkId;
-}
-
-function handleClick(linkId, event) {
+const handleClick = (linkId, event) => {
   event.preventDefault();
   activeLink.value = linkId;
-  emit('update:activeSection', linkId);
+  navbarStore.updateActiveSection(linkId)
 }
 
 </script>

@@ -47,7 +47,6 @@
 
 <script setup>
 import {onMounted} from "vue";
-import {animateElements} from "~/utils/home/gsapAnimations.js";
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 
 const {locale} = useI18n()
@@ -88,7 +87,6 @@ const updateSize = () => {
 onMounted(() => {
   updateSize();
   window.addEventListener('resize', updateSize);
-  animateElements()
 });
 
 </script>
@@ -99,12 +97,7 @@ onMounted(() => {
   margin-right: .9rem;
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 
-  &:hover {
-    color: #01B47C;
-    transform: scale(1.1);
-  }
-
-  @apply text-white dark:hover:text-[#01B47C] hover:text-[#01B47C] transition duration-300 ease-in-out transform hover:scale-110 mr-2
+  @apply text-[#081F33] dark:text-[#CBD5E1] dark:hover:text-[#01B47C] hover:text-[#01B47C] mr-2
 
 }
 </style>

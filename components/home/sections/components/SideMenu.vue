@@ -1,7 +1,7 @@
 <template>
-  <div class="fixed inset-0 bg-gray-900 bg-opacity-50 z-20" v-if="props.sideStatus === true" @click="emit('toggleSide')"></div>
+  <div class="fixed inset-0 bg-gray-900 bg-opacity-50 z-20" v-if="sidebarStatus" @click="toggleSideBar"></div>
  <transition name="sidebar">
-  <div v-if="props.sideStatus === true"
+  <div v-if="sidebarStatus"
        class="sidebar fixed top-0 bottom-0 block lg:hidden w-[330px] md:w-1/2 overflow-y-auto text-center bg-white dark:bg-gray-800 z-50 items-center">
     <header>
       <div class="flex justify-between w-100 h-auto p-3 custom-bg-gradient border-b dark:border-b-0">
@@ -25,7 +25,7 @@
             <NuxtLink
                 to="#about"
                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-                @click.native="emit('toggleSide')"
+                @click="toggleSideBar"
             >
               <font-awesome-icon :icon="['fas', 'user']" size="lg" class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
               <span class="ms-3 text-xl">{{ $t('links.about.text') }}</span>
@@ -35,7 +35,7 @@
             <NuxtLink
                 to="#experience"
                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-                @click.native="emit('toggleSide')"
+                @click="toggleSideBar"
             >
               <font-awesome-icon :icon="['fas', 'briefcase']" size="lg" class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
               <span class="ms-3 text-xl">{{ $t('links.experience.text') }}</span>
@@ -45,7 +45,7 @@
             <NuxtLink
                 to="#projects"
                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-                @click.native="emit('toggleSide')"
+                @click="toggleSideBar"
             >
               <font-awesome-icon :icon="['fas', 'diagram-project']" size="lg" class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
               <span class="ms-3 text-xl">{{ $t('links.works.text') }}</span>
@@ -55,7 +55,7 @@
             <NuxtLink
                 to="#technologies"
                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-                @click.native="emit('toggleSide')"
+                @click="toggleSideBar"
             >
               <font-awesome-icon :icon="['fas', 'laptop-code']" size="lg" class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
               <span class="ms-3 text-xl">{{ $t('links.technologies.text') }}</span>
@@ -65,7 +65,7 @@
             <NuxtLink
                 to="#certificates"
                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-                @click.native="emit('toggleSide')"
+                @click="toggleSideBar"
             >
               <font-awesome-icon size="lg" :icon="['fas', 'certificate']" class="text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
               <span class="ms-3 text-xl">{{ $t('links.certificates.text') }}</span>
@@ -99,44 +99,27 @@
           <span class="text-white text-lg">Contact me</span>
         </div>
         <SocialLinksAndCV class="justify-center"/>
-
     </div>
   </div>
  </transition>
 </template>
 
 <script setup>
-
+import {useSideBarStore} from "~/stores/useSideBarStore.js";
 import Language from "~/components/main/Language.vue";
 import ToggleMode from "~/components/main/ToggleMode.vue";
 import SocialLinksAndCV from "~/components/home/SocialLinksAndCV.vue";
 
-const props = defineProps({
-  sideStatus: Boolean
-})
-
-const emit = defineEmits(['toggleSide'])
-
 const {locale} = useI18n()
+
+const {toggleSideBar, sidebarStatus} = toRefs(useSideBarStore())
 
 </script>
 
 <style scoped>
 
-.sidebar-enter-active, .sidebar-leave-active {
-  transition: transform 0.5s ease, opacity 0.5s ease;
-}
-.sidebar-enter, .sidebar-leave-to {
-  transform: translateX(-100%);
-  opacity: 0;
-}
-.sidebar-enter-to, .sidebar-leave {
-  transform: translateX(0);
-  opacity: 1;
-}
-
 .custom-bg-gradient {
-  background: linear-gradient(to right, #081F33 10%, #01B47C 50%, #081F33 90%);
+  background-color: #081F33;
 }
 
 </style>
