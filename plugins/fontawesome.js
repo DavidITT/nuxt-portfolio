@@ -7,8 +7,9 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 
 library.add(fab, fas, far)
 
-// This is important, we are going to let Nuxt worry about the CSS
-config.autoAddCss = false
+// Disable CSS auto injection and SVG title replacement for SSR consistency
+config.autoAddCss = false;
+config.autoReplaceSvgTitle = false;
 
 export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.component('font-awesome-icon', FontAwesomeIcon, {})

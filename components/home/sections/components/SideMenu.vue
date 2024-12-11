@@ -1,8 +1,6 @@
 <template>
-  <div class="fixed inset-0 bg-gray-900 bg-opacity-50 z-20" v-if="sidebarStatus" @click="toggleSideBar"></div>
- <transition name="sidebar">
-  <div v-if="sidebarStatus"
-       class="sidebar fixed top-0 bottom-0 block lg:hidden w-[330px] md:w-1/2 overflow-y-auto text-center bg-white dark:bg-gray-800 z-50 items-center">
+  <div class="fixed inset-0 bg-gray-900 bg-opacity-50 z-20"  @click="toggleSideBar"></div>
+  <div class="sidebar fixed top-0 bottom-0 block lg:hidden w-[330px] md:w-1/2 overflow-y-auto text-center bg-white dark:bg-gray-800 z-50 items-center">
     <header>
       <div class="flex justify-between w-100 h-auto p-3 custom-bg-gradient border-b dark:border-b-0">
         <NuxtLink to="/home">
@@ -93,15 +91,14 @@
         </ul>
       </ul>
     </div>
-    <div class="w-[330px] md:w-full p-3.5 bottom-0 absolute custom-bg-gradient  border-t dark:border-0">
-
-        <div class="font-bold mb-3">
-          <span class="text-white text-lg">Contact me</span>
+    <div class="w-[330px] md:w-full p-3.5 bottom-0 absolute dark:border-0">
+      <hr class="py-1.5">
+        <div class="font-bold mb-3 text-gray-500">
+          <span class="dark:text-white text-gray-500 text-lg">Contact me</span>
         </div>
         <SocialLinksAndCV class="justify-center"/>
     </div>
   </div>
- </transition>
 </template>
 
 <script setup>
@@ -112,7 +109,8 @@ import SocialLinksAndCV from "~/components/home/SocialLinksAndCV.vue";
 
 const {locale} = useI18n()
 
-const {toggleSideBar, sidebarStatus} = toRefs(useSideBarStore())
+const {toggleSideBar} = useSideBarStore()
+
 
 </script>
 

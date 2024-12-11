@@ -1,45 +1,53 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // @ts-ignore
 export default defineNuxtConfig({
-  devtools: {enabled: true},
+    devtools: {enabled: true},
 
-  modules: ["@pinia/nuxt", "@nuxtjs/tailwindcss",
-      ["@nuxtjs/google-fonts", {
-          families: {
-              Roboto: true,
-              'Exo+2': {
-                  ital: [700]
-              },
-              'Space+Mono': true
-          }
-      }
-      ], "@nuxtjs/i18n"],
+    app: {
+        head: {
+            link: [
+                {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' }
+            ]
+        }
+    },
 
-  i18n: {
-      locales: [
-          {code: 'es', name: 'Español', iso: 'es-ES', file: 'es-ES.json'},
-          {code: 'en', name: 'English', iso: 'en-US', file: 'en-US.json'}
-      ],
-      defaultLocale: "en",
-      langDir: 'lang/',
-      lazy: true,
-      strategy: 'no_prefix',
-      detectBrowserLanguage: false,
-  },
+    modules: ["@pinia/nuxt", "@nuxtjs/tailwindcss",
+        ["@nuxtjs/google-fonts", {
+            families: {
+                Roboto: true,
+                'Exo+2': {
+                    ital: [700]
+                },
+                'Space+Mono': true
+            }
+        }
+        ], "@nuxtjs/i18n"],
 
-  tailwindcss: {
-      exposeConfig: true,
-      viewer: true,
-  },
+    i18n: {
+        locales: [
+            {code: 'es', name: 'Español', iso: 'es-ES', file: 'es-ES.json'},
+            {code: 'en', name: 'English', iso: 'en-US', file: 'en-US.json'}
+        ],
+        defaultLocale: "en",
+        langDir: 'lang/',
+        lazy: true,
+        strategy: 'no_prefix',
+        detectBrowserLanguage: false,
+    },
 
-  build: {
-      transpile: ['three'],
-  },
+    tailwindcss: {
+        exposeConfig: true,
+        viewer: true,
+    },
 
-  css: [
-      '@fortawesome/fontawesome-svg-core/styles.css'
-  ],
+    build: {
+        transpile: ['three', '@fortawesome/vue-fontawesome', 'animate.css/animate.min.css'],
+    },
 
-  plugins: ['~/plugins/fontawesome.js'],
-  compatibilityDate: '2024-10-31',
+    css: [
+        '@fortawesome/fontawesome-svg-core/styles.css'
+    ],
+
+    plugins: ['~/plugins/fontawesome.js'],
+    compatibilityDate: '2024-10-31',
 })
