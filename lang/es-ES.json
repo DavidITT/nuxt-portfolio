@@ -72,6 +72,9 @@
   },
   "more-text": "Mostrar mas",
   "projects": {
+    "laravel-reverb-chat": {
+      "description": "Este proyecto simula un chat en tiempo real entre los usuarios de tu sistema utilizando Laravel Reverb. Los usuarios pueden enviar y recibir mensajes instantáneamente, creando una experiencia de chat dinámica y colaborativa. Con Laravel Reverb, la aplicación aprovecha las capacidades de WebSockets para asegurar una comunicación rápida y sin interrupciones. Ideal para practicar habilidades de desarrollo en Laravel, manejo de eventos en tiempo real y creación de interfaces de usuario interactivas."
+    },
     "indecision-app": {
       "description": "Haz tu pregunta (¡asegúrate de terminar con un signo de interrogación!) y deja que una API externa decida tu destino con un Sí, No, o Tal vez, según la suerte. Cada respuesta viene con un GIF animado para hacerlo más divertido. Con una interfaz de chat realista, es ideal para decisiones rápidas o simplemente pasar un buen rato. ¿Te Atreves a preguntar?"
     },
