@@ -5,13 +5,19 @@
           $t('links.works.text')
         }}</h2>
     </div>
+    <div class="mt-10">
+     <ProjectsList/>
+    </div>
   </section>
 </template>
 
 
 <script>
+import ProjectsList from "~/components/projects/ProjectsList.vue";
+
 export default {
-  name: "Projects"
+  name: "Projects",
+  components: {ProjectsList}
 }
 </script>
 

@@ -18,6 +18,7 @@
       "text": "Experience",
       "href": "#experience"
     },
+
     "works": {
       "name": "projects",
       "text": "Projects",
@@ -72,6 +73,20 @@
   },
   "more-text": "See more",
   "less-text": "Less",
+  "projects": {
+    "indecision-app": {
+      "description": "Ask your question (make sure it ends with a question mark!) and let an external API decide your fate with a Yes, No, or Maybe, depending on luck. Each response comes with an animated GIF to make it more fun. With a realistic chat interface, it's perfect for quick decisions or just having a good time. Are you ready to ask?"
+    },
+    "shadow-pokemon-quiz": {
+      "description": "Test your skills and discover which Pokémon is hidden behind the shadow. Simply choose the correct Pokémon from the list of options. If you guess right, you'll receive a correct message. If you miss, don't worry— you can try as many times as you want."
+    },
+    "sphere-js": {
+      "description": "Explore a practice project where we visualize the global population on a 3D model of the planet. Each country is represented with accuracy, allowing an educational and visually striking journey through the world. Perfect for applying web development skills and geospatial data visualization using Three.js."
+    },
+    "colective-journal": {
+      "description": "In this project, users can create an account on Firebase using email and password to authenticate. All users share the same collection of writings, creating a collaborative space where each person can write their thoughts and reflections. These writings are stored in a Realtime Database, providing a secure and accessible space for everyone. Ideal for practicing authentication, CRUD operations, and real-time collaboration using Firebase. "
+    }
+  },
   "certificates": {
     "certificate": "Certificate",
     "course": "Course",
@@ -108,5 +123,19 @@
   "language": {
     "english": "English",
     "spanish": "Spanish"
+  },
+  "months": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
   }
 }
