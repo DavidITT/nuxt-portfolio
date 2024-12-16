@@ -78,6 +78,9 @@
     "indecision-app": {
       "description": "Haz tu pregunta (¡asegúrate de terminar con un signo de interrogación!) y deja que una API externa decida tu destino con un Sí, No, o Tal vez, según la suerte. Cada respuesta viene con un GIF animado para hacerlo más divertido. Con una interfaz de chat realista, es ideal para decisiones rápidas o simplemente pasar un buen rato. ¿Te Atreves a preguntar?"
     },
+    "mapbox-app": {
+      "description": "Desarrollé una aplicación en Vue 3 con TypeScript que integra Mapbox para ofrecer búsqueda de direcciones, utilizar la ubicación en tiempo real del usuario y trazar rutas hacia destinos seleccionados. La solución incluye el cálculo dinámico de distancias en kilómetros y tiempos estimados en minutos, mejorando la experiencia de navegación y planificación de rutas."
+    },
     "shadow-pokemon-quiz": {
       "description": "Ponte a prueba y descubre qué Pokémon se oculta detrás de la sombra. Simplemente selecciona el Pokémon correcto de la lista de opciones. Si aciertas, recibirás un mensaje de correcto. Si fallas, no te preocupes, puedes intentarlo tantas veces como quieras."
     },
