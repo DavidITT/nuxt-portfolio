@@ -7,7 +7,7 @@
           <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">{{ title }}</span>
         </div>
       </NuxtLink>
-      <div class="flex justify-end items-center space-x-2">
+      <div class="flex justify-end items-center space-x-3">
         <Language />
         <ToggleMode />
         <button type="button" class="lg:hidden inline-flex items-center p-2 justify-center text-sm text-white" @click="toggleSideBar">
