@@ -94,7 +94,7 @@
     <div class="w-[330px] md:w-full p-3.5 bottom-0 absolute dark:border-0">
       <hr class="py-1.5">
         <div class="font-bold mb-3 text-gray-500">
-          <span class="dark:text-white text-gray-500 text-lg">Contact me</span>
+          <span class="dark:text-white text-gray-500 text-lg">{{ $t('contact') }}</span>
         </div>
         <SocialLinksAndCV class="justify-center"/>
     </div>
