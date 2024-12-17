@@ -21,12 +21,12 @@
     },
     "works": {
       "name": "projects",
-      "text": "Proyectos",
+      "text": "Proyectos personales",
       "href": "#projects"
     },
     "technologies": {
       "name": "technologies",
-      "text": "Tecnologias que uso",
+      "text": "Stack Tecnológico",
       "href": "#technologies"
     },
     "certificates": {

@@ -22,12 +22,12 @@
 
     "works": {
       "name": "projects",
-      "text": "Projects",
+      "text": "Personal projects",
       "href": "#projects"
     },
     "technologies": {
       "name": "technologies",
-      "text": "Technologies I Use",
+      "text": "Tech Stack",
       "href": "#technologies"
     },
     "certificates": {
