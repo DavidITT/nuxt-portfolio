@@ -137,6 +137,12 @@
                 Typescript
               </div>
             </li>
+            <li class="mr-1.5 mt-2">
+              <div
+                  class="flex items-center rounded-full bg-[#9B51E0]/10 px-3 py-1 text-xs font-medium leading-5 text-[#9B51E0]/80 ">
+                Pinia
+              </div>
+            </li>
           </ul>
         </div>
       </div>
